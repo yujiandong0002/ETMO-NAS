@@ -7,16 +7,14 @@ import torch.nn.functional as F
 
 
 from .utils import val2list
-from .ops import (
+from .operation import (
     SEModule, 
     ConvLayer, 
     ShortcutLayer, 
     MBConvLayer, 
     LinearLayer, 
     build_activation, 
-    make_divisible
-)
-from .dynamic_ops import (
+    make_divisible,
     DynamicSeparableConv2d, 
     DynamicBatchNorm2d, 
     DynamicConv2d, 
